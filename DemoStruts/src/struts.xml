@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />   
+    <constant name="struts.custom.i18n.resources" value="main.resources.global" />
+    <package name="default" namespace="/" extends="struts-default" >
+  
+  
+    <action name="home" class="org.fre.struts.LoadHome" method="successAction">
+    	<result name="loadSuccess">/home.jsp</result>
+    </action>
+      		
+      		
+    <action name="locale" class="org.fre.struts.LoadHome" method="executeAction">
+    	<result name="actionExecuted">/home.jsp</result>
+    </action>
+    
+	</package> 
+</struts>
