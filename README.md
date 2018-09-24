@@ -1,1 +1,1 @@
-# Snippet-demigod
+# Struts2 demo
